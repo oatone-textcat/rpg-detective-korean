@@ -90,8 +90,10 @@ if not exist "%PCK%" (
   --patch-file="%PATCH_SRC%\i_searcher_input.gd.remap"="res://scene/items/i_searcher_input.gd.remap" ^
   --patch-file="%PATCH_SRC%\i_party.tscn.remap"="res://scene/items/i_party.tscn.remap" ^
   --patch-file="%PATCH_SRC%\_TitleScene.tscn.remap"="res://scene/canvas/_TitleScene.tscn.remap" ^
+  --patch-file="%PATCH_SRC%\i_end_img.tscn.remap"="res://scene/items/i_end_img.tscn.remap" ^
   --patch-file="%PATCH_SRC%\export-1fb51089a4687ce6b57b79f41444e4c5-i_party.scn"="res://.godot/exported/133200997/export-1fb51089a4687ce6b57b79f41444e4c5-i_party.scn" ^
   --patch-file="%PATCH_SRC%\export-6859bfc9ba6f80c10b573329854cf86a-_TitleScene.scn"="res://.godot/exported/133200997/export-6859bfc9ba6f80c10b573329854cf86a-_TitleScene.scn" ^
+  --patch-file="%PATCH_SRC%\export-8b47332452111aec29a4cfcd23ec4598-i_end_img.scn"="res://.godot/exported/133200997/export-8b47332452111aec29a4cfcd23ec4598-i_end_img.scn" ^
   --patch-file="%PATCH_SRC%\HakgyoansimMoheomgaB.ttf-df5f1dab6abb0d40529d4932a731861b.fontdata"="res://.godot/imported/HakgyoansimMoheomgaB.ttf-df5f1dab6abb0d40529d4932a731861b.fontdata" ^
   --patch-file="%PATCH_SRC%\HakgyoansimMoheomgaB.ttf.import"="res://data/font/HakgyoansimMoheomgaB.ttf.import" ^
   --output="%PCK%"
