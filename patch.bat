@@ -51,7 +51,18 @@ if not exist "%PCK%" (
   goto :END
 )
 
-"%GDRE%" --headless --pck-patch="%PCK%.backup" --patch-file="%PATCH_SRC%\i_searcher_input.gdc"="res://scene/items/i_searcher_input.gdc" --patch-file="%PATCH_SRC%\i_searcher_input.gd.remap"="res://scene/items/i_searcher_input.gd.remap" --output="%PCK%"
+"%GDRE%" --headless --pck-patch="%PCK%.backup" ^
+  --patch-file="%PATCH_SRC%\i_searcher_input.gdc"="res://scene/items/i_searcher_input.gdc" ^
+  --patch-file="%PATCH_SRC%\i_searcher_input.gd.remap"="res://scene/items/i_searcher_input.gd.remap" ^
+  --patch-file="%PATCH_SRC%\i_party.tscn.remap"="res://scene/items/i_party.tscn.remap" ^
+  --patch-file="%PATCH_SRC%\_TitleScene.tscn.remap"="res://scene/canvas/_TitleScene.tscn.remap" ^
+  --patch-file="%PATCH_SRC%\export-1fb51089a4687ce6b57b79f41444e4c5-i_party.scn"="res://.godot/exported/133200997/export-1fb51089a4687ce6b57b79f41444e4c5-i_party.scn" ^
+  --patch-file="%PATCH_SRC%\export-6859bfc9ba6f80c10b573329854cf86a-_TitleScene.scn"="res://.godot/exported/133200997/export-6859bfc9ba6f80c10b573329854cf86a-_TitleScene.scn" ^
+  --patch-file="%PATCH_SRC%\HakgyoansimMoheomgaB.ttf-df5f1dab6abb0d40529d4932a731861b.fontdata"="res://.godot/imported/HakgyoansimMoheomgaB.ttf-df5f1dab6abb0d40529d4932a731861b.fontdata" ^
+  --patch-file="%PATCH_SRC%\HakgyoansimMoheomgaB.ttf.import"="res://data/font/HakgyoansimMoheomgaB.ttf.import" ^
+  --output="%PCK%"
+
+
 set "RC=%ERRORLEVEL%"
 if not "%RC%"=="0" (
   echo ERROR: gdre_tools.exe failed with exit code %RC%
