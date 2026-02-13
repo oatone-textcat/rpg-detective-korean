@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RPG Detective Korean Patcher (Proton)
+Comment=Runs patch.bat via Proton on Steam Deck
+Type=Application
+Terminal=true
+Icon=utilities-terminal
+Exec=sh -c 'cd "$(dirname "%k")" && chmod +x ./run_patch_proton.sh && ./run_patch_proton.sh; echo; echo "Press Enter to close..."; read -r'
+Categories=Game;
